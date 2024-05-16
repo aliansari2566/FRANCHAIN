@@ -12,7 +12,7 @@ const Signup = () => {
   const [form] = Form.useForm();
 
   const [isButtonDisabled, setButtonDisabled] = useState(true);
-  const [selectedCountry, setSelectedCountry] = useState(null);
+
   const onFinish = async (values) => {
     try {
       await form.validateFields();
@@ -29,9 +29,7 @@ const Signup = () => {
     // Disable or enable button based on the presence of empty fields
     setButtonDisabled(isEmptyField);
   };
-  const handleCountryChange = (selectedOption) => {
-    setSelectedCountry(selectedOption);
-  };
+
   const customSingleValue = ({ data }) => (
     <div>
       <CountryFlag countryCode={data.code} svg style={{ width: '1em', height: '1em' }} />
@@ -122,7 +120,7 @@ const Signup = () => {
                     <Input className="SignupInput" />
                     <Select
                     options={countryOptions}
-                    onChange={handleCountryChange}
+                    
                     components={{ SingleValue: customSingleValue, Option: customOption }}
                    
                     defaultValue={countryOptions[0]} 
