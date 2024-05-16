@@ -49,76 +49,7 @@ const Login = () => {
               </div>
             </Col>
             <Col className="loginRight" xs={24} sm={24} md={12} lg={12} xl={12}>
-              <div className="FormOuter">
-                <h3>Get started with Franchain </h3>
-                <p>Create an account in 5 minutes.</p>
-                <Form
-                  layout="vertical"
-                  form={form}
-                  id="login_form"
-                  name="login"
-                  className="login-form"
-                  initialValues={{ remember: true }}
-                  onFinish={onFinish}
-                  onValuesChange={handleValuesChange}
-                >
-                  <Form.Item
-                    label="First name"
-                    name="firstname"
-                    rules={[{ required: true, message: "Please input your first name" }]}
-                  >
-                    <Input className="LoginInput" />
-                  </Form.Item>
-                  <Form.Item
-                    label="Last name"
-                    name="lastname"
-                    rules={[{ required: true, message: "Please input your last name" }]}
-                  >
-                    <Input className="LoginInput" />
-                  </Form.Item>
-                  <Form.Item
-                    label="Business name and HQ location"
-                    name="business"
-                    rules={[{ required: true, message: "Please Enter your Business name" }]}
-                  >
-                    <Input className="LoginInput" />
-                  </Form.Item>
-                  <Form.Item
-                    label="Work email"
-                    name="email"
-                    rules={[
-                      {
-                        required: true,
-                        message: "Please enter your email",
-                      },
-                      {
-                        type: "email",
-                        message: "Please enter a valid email",
-                      },
-                    ]}
-                  >
-                    <Input className="LoginInput" />
-                  </Form.Item>
-                  <Form.Item
-                    label="Password"
-                    name="password"
-                    rules={[{ required: true, message: "Please input your Password!" }, {
-                      len: 12,
-                      message: "Password must be at least 12 characters"
-                    }]}
-                  >
-                    <Input  type="password"className="LoginInput" placeholder="Password" />
-                 
-                  </Form.Item>
-                
-                
-                  <Form.Item>
-                    <Button type="primary" htmlType="submit" className="login-form-button"     disabled={isButtonDisabled}>
-                      Log in
-                    </Button>
-                  </Form.Item>
-                </Form>
-              </div>
+            
             </Col>
           </Row>
         </div>

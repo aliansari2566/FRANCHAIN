@@ -10,7 +10,7 @@
 
 body, html {
   font-family: 'DM Sans', sans-serif !important;
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   /* overflow: hidden; */
 }
@@ -24,15 +24,19 @@ label.ant-form-item-required::before {
   line-height: 20.83px;
   text-align: left;
 }
-.Login {
+#root{
+min-height: 100vh;
+}
+.Signup {
   display: flex;
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
+  min-height: 100vh;
   position: relative;
 }
 
-.Login::before, .Login::after {
+.Signup::before, .Signup::after {
   content: "";
   position: absolute;
   top: 0;
@@ -41,12 +45,12 @@ label.ant-form-item-required::before {
   z-index: -1;
 }
 
-.Login::before {
+.Signup::before {
   left: 0;
   background: linear-gradient(146.36deg, #DFEAF0 8.13%, #D5E4EA 58.07%, #F4E7F4 99.76%);
 }
 
-.Login::after {
+.Signup::after {
   right: 0;
   background: #F8F8FB;
 }
@@ -57,7 +61,7 @@ label.ant-form-item-required::before {
   height: 100%;
   /* background: white; */
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   border-radius: 8px;
 }
 .container-row {
@@ -78,12 +82,12 @@ header, footer {
   margin: 0 auto;
 }
 
-.LoginHeading {
+.SignupHeading {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
 }
-.loginLeftcontent {
+.SignupLeftcontent {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -94,15 +98,15 @@ header, footer {
     width: 100%;
     margin-top: 1rem;
 }
-.loginLeftcontent .ImageContainer{
+.SignupLeftcontent .ImageContainer{
   width: 427.62px;
   height: 327px;
 }
-.loginLeftcontent .ImageContainer .ScreenImage{
+.SignupLeftcontent .ImageContainer .ScreenImage{
   width: 100%;
   height: 100%;
 }
-.loginLeftcontent h4 {
+.SignupLeftcontent h4 {
   font-size: 40px;
   font-weight: 500;
   line-height: 52.08px;
@@ -111,14 +115,14 @@ header, footer {
   margin-bottom: 1rem;
 
 }
-.loginLeftcontent p{
+.SignupLeftcontent p{
   font-size: 22px;
   font-weight: 400;
   line-height: 28.64px;
   text-align: center;
 }
 
-.loginLeftcontent, .FormOuter {
+.SignupLeftcontent, .FormOuter {
 
   margin: 0 auto; /* Center the content */
 }
@@ -132,17 +136,18 @@ header, footer {
   font-weight: 500;
   line-height: 45.57px;
 }
-.FormOuter p{
+.FormOuter .formPara{
   font-size: 20px;
   font-weight: 400;
   line-height: 26.04px;
+  padding-bottom: 40px;
 }
 
-.login-form {
+.Signup-form {
   width: 100%;
 }
 
-.LoginInput {
+.SignupInput {
   width: 100%;
     height: 56px;
   
@@ -151,20 +156,34 @@ header, footer {
     border: 1px solid #B1B7D6;
 }
 
-.login-form-forgot {
+.Signup-form-forgot {
   display: block;
   text-align: right;
   margin-bottom: 10px;
 }
 
-.login-form-button {
-  width: 100%;
+.Signup-form-button {
+  width: 144px;
+  height: 53px;
+  padding: 15px 40px 15px 40px;
+  gap: 15px;
+  border-radius: 60px;
+  background-color: #7D97FF !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
 }
-.loginHeader{
+.Signup-form-button:hover {
+
+  background-color: #7D97FF !important;
+}
+.DynamicHeader{
     display: flex;
     justify-content: space-between;
 }
-
+.HeaderLogoImage{
+  cursor: pointer;
+}
 
 
 .dynamic-button{
@@ -172,22 +191,93 @@ header, footer {
     margin: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
-.loginHeader .dynamic-button .anticon{
+.DynamicHeader .dynamic-button .anticon{
   margin-left: 0.7rem;
 }
-
+.ant-btn-primary:disabled{
+  border-color: none;
+  color: white;
+  background: #CED6F7 !important;
+}
+.agreementPara{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  text-align: left;
+  color: #282828;
+  
+}
+.agreementPara a{
+text-decoration: underline;
+color: #282828 !important;
+}
+.btn-item{
+padding-top: 30px;
+}
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .Signup::before, .Signup::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.container-row {
+
+  padding-top: 9.661rem;
+}
+.FormOuter {
+  max-width: 624px;
+  width: 100%;
+}
+.SignupLeft{
+display: none;
+}
+}
 @media (max-width: 768px) {
   .content-container {
     padding: 15px;
   }
 
-  .LoginHeading {
+  .SignupHeading {
     font-size: 1.5rem;
   }
 
-  .LoginInput {
+  .SignupInput {
     font-size: 0.875rem;
   }
+  .FormOuter {
+    max-width: 353px;
+    width: 100%;
+}
+.FormOuter h3 {
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28.64px;
+ 
+}
+.FormOuter .formPara {
+  padding-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  text-align: left;
+}
+.container-row {
+
+  padding-top: 40px;
+}
+.agreementPara{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13.02px;
+  text-align: left;
+  color: #282828;
+  
+}
 }

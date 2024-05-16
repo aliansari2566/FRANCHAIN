@@ -6,7 +6,7 @@ import { DynamicButton } from './DynamicButton';
 export const DynamicHeader = ({ buttonText }) => {
   return (
     <div>
-      <div className="loginHeader">
+      <div className="DynamicHeader">
         <img
           src={LoginLogo}
           alt="logo"
