@@ -1,18 +1,18 @@
 import React, { useState }from "react";
 import { Button, Form, Input, Col, Row, message } from "antd";
-import { useNavigate } from "react-router-dom";
+
 import { DynamicHeader } from "../../components/DynamicHeader";
 import Image from "../../assets/svg/screenImage.svg";
 
 
 const Login = () => {
   const [form] = Form.useForm();
-  const navigate = useNavigate();
+
   const [isButtonDisabled, setButtonDisabled] = useState(true); 
   const onFinish = async (values) => {
     try {
       await form.validateFields();
-      const { username, password } = values;
+     
       console.log(values);
     } catch (error) {
       console.error("Error submitting form:", error);
