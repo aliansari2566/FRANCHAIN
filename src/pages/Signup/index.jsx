@@ -3,12 +3,16 @@ import { Button, Form, Input, Col, Row, message } from "antd";
 
 import { DynamicHeader } from "../../components/DynamicHeader";
 import Image from "../../assets/svg/screenImage.svg";
+import Select from "react-select";
+import CountryFlag from "react-country-flag";
+import countryOptions from "../../file/Countries";
 
 
 const Signup = () => {
   const [form] = Form.useForm();
 
   const [isButtonDisabled, setButtonDisabled] = useState(true);
+  const [selectedCountry, setSelectedCountry] = useState(null);
   const onFinish = async (values) => {
     try {
       await form.validateFields();
@@ -25,13 +29,35 @@ const Signup = () => {
     // Disable or enable button based on the presence of empty fields
     setButtonDisabled(isEmptyField);
   };
+  const handleCountryChange = (selectedOption) => {
+    setSelectedCountry(selectedOption);
+  };
+  const customSingleValue = ({ data }) => (
+    <div>
+      <CountryFlag countryCode={data.code} svg style={{ width: '1em', height: '1em' }} />
+    
+      {data.code}
+    </div>
+  );
+  const customOption = (props) => {
+    const { data, innerRef, innerProps } = props;
+    return (
+      <div ref={innerRef} {...innerProps}>
+        <CountryFlag countryCode={data.code} svg style={{ width: '1em', height: '1em' }} />
+      
+        {data.label}
+      </div>
+    );
+  };
+
+
   return (
     <>
       <div className="Signup">
         <div className="content-container">
           <DynamicHeader buttonText="Log in" />
           <Row justify="center" className="container-row">
-            <Col className="SignupLeft" xs={24} sm={24} md={12} lg={12} xl={12}>
+            <Col className="SignupLeft" xs={12} sm={12} md={12} lg={12} xl={12}>
               <div className="SignupLeftcontent">
                 <div className="ImageContainer">
                   <img
@@ -48,7 +74,7 @@ const Signup = () => {
 
               </div>
             </Col>
-            <Col className="SignupRight" xs={24} sm={24} md={24} lg={12} xl={12}>
+            <Col className="SignupRight" xs={12} sm={12} md={24} lg={12} xl={12}>
               <div className="FormOuter">
                 <h3>Get started with Franchain </h3>
                 <p className="formPara">Create an account in 5 minutes.</p>
@@ -63,7 +89,7 @@ const Signup = () => {
                   onValuesChange={handleValuesChange}
                 >
                   <Row gutter={[16, 16]}>
-                    <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                    <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                       <div  >
                         <Form.Item
                           label="First name"
@@ -74,7 +100,7 @@ const Signup = () => {
                         </Form.Item>
                       </div>
                     </Col>
-                    <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                    <Col xs={12} sm={12} md={12} lg={12} xl={12}>
                       <div  >
                         <Form.Item
                           label="Last name"
@@ -94,7 +120,16 @@ const Signup = () => {
                     rules={[{ required: true, message: "Please Enter your Business name" }]}
                   >
                     <Input className="SignupInput" />
+                    <Select
+                    options={countryOptions}
+                    onChange={handleCountryChange}
+                    components={{ SingleValue: customSingleValue, Option: customOption }}
+                   
+                    defaultValue={countryOptions[0]} 
+                  />
                   </Form.Item>
+                 
+                  
                   <Form.Item
                     label="Work email"
                     name="email"

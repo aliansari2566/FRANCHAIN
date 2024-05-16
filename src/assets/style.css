@@ -189,7 +189,45 @@ header, footer {
 .HeaderLogoImage{
   cursor: pointer;
 }
+/*############    Select ##############*/
+.css-b62m3t-container {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  height: inherit;
+  /* height: 56px !important; */
+}
+.css-13cymwt-control{
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  min-height: 56px !important;
+  border: none !important;
+  border-left: 1px solid #B1B7D6!important;
 
+}
+.css-1fdsijx-ValueContainer{
+  padding-right: 3px!important;
+}
+.css-1fdsijx-ValueContainer  div img{
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 8px !important;
+
+}
+.css-1xc3v61-indicatorContainer{
+  color: black !important;
+}
+.css-tj5bde-Svg{
+
+stroke-width: 0px !important;
+}
+.css-1u9des2-indicatorSeparator{
+  display: none !important;
+}
+.css-qbdosj-Input{
+  display: none !important;
+}
+/*############    Select ##############*/
 
 .dynamic-button{
     padding: 0;
@@ -321,5 +359,8 @@ display: none;
   text-align: left;
   color: #282828;
   
+}
+.css-13cymwt-control{
+  min-height: -webkit-fill-available !important;
 }
 }
