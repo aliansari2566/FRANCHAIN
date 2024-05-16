@@ -188,6 +188,7 @@ header, footer {
 }
 .HeaderLogoImage{
   cursor: pointer;
+  
 }
 /*############    Select ##############*/
 .css-b62m3t-container {
@@ -394,10 +395,10 @@ display: none;
   font-size: 15.6px; /* Increased from 12px */
 
 
- 
-
-
-
+}
+.HeaderLogoImage{
+  cursor: pointer;
+  width: 30px;
 }
 .container-row {
 
