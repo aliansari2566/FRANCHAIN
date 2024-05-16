@@ -253,11 +253,12 @@ stroke-width: 0px !important;
 }
 .css-qbdosj-Input{
   display: none !important;
-  outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  visibility: hidden !important;
+  outline: none !important; /* Ensure no outline on focus */
+  -webkit-appearance: none !important; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none !important; /* Firefox */
+  -ms-appearance: none !important; /* Internet Explorer */
+  appearance: none !important; 
 }
  .selectItem  .ant-form-item-control .ant-form-item-control-input-content{
   position: relative !important;
