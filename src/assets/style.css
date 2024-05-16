@@ -170,7 +170,13 @@ header, footer {
   background-color: #7D97FF !important;
   font-size: 18px;
   font-weight: 700;
+  color: #282828 !important;
   line-height: 23.44px;
+  outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
 .Signup-form-button:hover {
 
@@ -191,6 +197,9 @@ header, footer {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.83px;
 }
 .DynamicHeader .dynamic-button .anticon{
   margin-left: 0.7rem;
@@ -211,6 +220,7 @@ header, footer {
 .agreementPara a{
 text-decoration: underline;
 color: #282828 !important;
+-webkit-tap-highlight-color: transparent;
 }
 .btn-item{
 padding-top: 30px;
@@ -249,6 +259,19 @@ display: none;
   .SignupInput {
     font-size: 0.875rem;
   }
+  .ant-form-item .ant-form-item-label >label {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15.62px;
+  }
+  .SignupInput {
+  
+    height: 33.86px;
+    border-radius: 6px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #B1B7D6;
+}
+
   .FormOuter {
     max-width: 353px;
     width: 100%;
@@ -265,7 +288,21 @@ display: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.83px;
-  text-align: left;
+  padding-bottom: 24px;
+}
+.Signup-form-button {
+  width: 91.37px;
+  height: 34.14px;
+ 
+  padding: 6.07px 24.18px 9.07px 24.18px;
+
+  font-size: 12px;
+
+
+ 
+
+
+
 }
 .container-row {
 
