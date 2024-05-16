@@ -231,26 +231,51 @@ header, footer {
 }
 .css-1xc3v61-indicatorContainer{
   color: black !important;
+  outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
+
 .css-tj5bde-Svg{
 
 stroke-width: 0px !important;
+
 }
 .css-1u9des2-indicatorSeparator{
   display: none !important;
+  outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
 .css-qbdosj-Input{
   display: none !important;
+  outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
  .selectItem  .ant-form-item-control .ant-form-item-control-input-content{
   position: relative !important;
+  outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
  }
  .selectItem  .ant-form-item-control {
   position: relative !important;
+  outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
  }
- .selectItem  .ant-form-item-control .ant-form-item-control-input-content{
-  position: relative !important;
- }
+ 
 /*############    Select ##############*/
 
 .dynamic-button{
