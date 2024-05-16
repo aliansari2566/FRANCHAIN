@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import { Button, Form, Input, Col, Row, message } from "antd";
 
 import { DynamicHeader } from "../../components/DynamicHeader";
@@ -8,11 +8,11 @@ import Image from "../../assets/svg/screenImage.svg";
 const Signup = () => {
   const [form] = Form.useForm();
 
-  const [isButtonDisabled, setButtonDisabled] = useState(true); 
+  const [isButtonDisabled, setButtonDisabled] = useState(true);
   const onFinish = async (values) => {
     try {
       await form.validateFields();
-     
+
       console.log(values);
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -29,7 +29,7 @@ const Signup = () => {
     <>
       <div className="Signup">
         <div className="content-container">
-          <DynamicHeader buttonText="Log in"/>
+          <DynamicHeader buttonText="Log in" />
           <Row justify="center" className="container-row">
             <Col className="SignupLeft" xs={24} sm={24} md={12} lg={12} xl={12}>
               <div className="SignupLeftcontent">
@@ -62,20 +62,32 @@ const Signup = () => {
                   onFinish={onFinish}
                   onValuesChange={handleValuesChange}
                 >
-                  <Form.Item
-                    label="First name"
-                    name="firstname"
-                    rules={[{ required: true, message: "Please input your first name" }]}
-                  >
-                    <Input className="SignupInput" />
-                  </Form.Item>
-                  <Form.Item
-                    label="Last name"
-                    name="lastname"
-                    rules={[{ required: true, message: "Please input your last name" }]}
-                  >
-                    <Input className="SignupInput" />
-                  </Form.Item>
+                  <Row gutter={[16, 16]}>
+                    <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                      <div  >
+                        <Form.Item
+                          label="First name"
+                          name="firstname"
+                          rules={[{ required: true, message: "Please input your first name" }]}
+                        >
+                          <Input className="SignupInput" />
+                        </Form.Item>
+                      </div>
+                    </Col>
+                    <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                      <div  >
+                        <Form.Item
+                          label="Last name"
+                          name="lastname"
+                          rules={[{ required: true, message: "Please input your last name" }]}
+                        >
+                          <Input className="SignupInput" />
+                        </Form.Item>
+                      </div>
+                    </Col>
+                  </Row>
+
+
                   <Form.Item
                     label="Business name and HQ location"
                     name="business"
@@ -106,23 +118,23 @@ const Signup = () => {
                       min: 12, message: "Password must be at least 12 characters"
                     }]}
                   >
-                    <Input  type="password"className="SignupInput" placeholder="Password" />
-                 
+                    <Input type="password" className="SignupInput" placeholder="Password" />
+
                   </Form.Item>
-                
-                
+
+
                   <Form.Item className="btn-item">
-                    <Button type="primary" htmlType="submit" className="Signup-form-button"     disabled={isButtonDisabled}>
+                    <Button type="primary" htmlType="submit" className="Signup-form-button" disabled={isButtonDisabled}>
                       Log in
                     </Button>
                   </Form.Item>
 
                   <p className="agreementPara" >
-  By clicking “Start Application“, I agree to Mercury’s <a href="https://mercury.com/legal/terms">Terms of Use</a>,
-  <a href="https://mercury.com/legal/privacy">Privacy Policy</a>  and to receive electronic communication about my
-  accounts and services per <a href="https://mercury.com/legal/esign">Mercury’s Electronic Communications Agreement</a>, and
-  acknowledge receipt of <a href="https://mercury.com/legal/patriot-act">Mercury’s USA PATRIOT Act disclosure.</a> 
-</p>
+                    By clicking “Start Application“, I agree to Mercury’s <a href="https://mercury.com/legal/terms">Terms of Use</a>,
+                    <a href="https://mercury.com/legal/privacy">Privacy Policy</a>  and to receive electronic communication about my
+                    accounts and services per <a href="https://mercury.com/legal/esign">Mercury’s Electronic Communications Agreement</a>, and
+                    acknowledge receipt of <a href="https://mercury.com/legal/patriot-act">Mercury’s USA PATRIOT Act disclosure.</a>
+                  </p>
                 </Form>
               </div>
             </Col>
