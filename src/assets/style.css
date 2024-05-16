@@ -314,6 +314,7 @@ footer {
   /* Internet Explorer */
   appearance: none !important;
 }
+
 .css-qbdosj-Input {
   display: none !important;
   visibility: hidden !important;
@@ -326,6 +327,10 @@ footer {
   -ms-appearance: none !important;
   /* Internet Explorer */
   appearance: none !important;
+}
+.css-hlgwow div img{margin-right: 8px !important ;
+  width: 20px !important;
+  height: 20px !important;
 }
 
 .selectItem .ant-form-item-control .ant-form-item-control-input-content {
