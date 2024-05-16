@@ -196,10 +196,16 @@ header, footer {
     margin: 0;
     border: none;
     background-color: transparent;
+    color: #282828 !important; 
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     line-height: 20.83px;
+    outline: none; /* Ensure no outline on focus */
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
 .DynamicHeader .dynamic-button .anticon{
   margin-left: 0.7rem;
