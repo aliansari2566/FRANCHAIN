@@ -55,7 +55,7 @@ const Signup = () => {
         <div className="content-container">
           <DynamicHeader buttonText="Log in" />
           <Row justify="center" className="container-row">
-            <Col className="SignupLeft" xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Col className="SignupLeft" xs={24} sm={24} md={24} lg={12} xl={12}>
               <div className="SignupLeftcontent">
                 <div className="ImageContainer">
                   <img
@@ -72,7 +72,7 @@ const Signup = () => {
 
               </div>
             </Col>
-            <Col className="SignupRight" xs={12} sm={12} md={24} lg={12} xl={12}>
+            <Col className="SignupRight" xs={24} sm={24} md={24} lg={12} xl={12}>
               <div className="FormOuter">
                 <h3>Get started with Franchain </h3>
                 <p className="formPara">Create an account in 5 minutes.</p>
