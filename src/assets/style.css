@@ -334,7 +334,7 @@ display: none;
   }
   .SignupInput {
   
-    height: 33.86px;
+    height: 40.632px;
     border-radius: 6px;
     border: 1px 0px 0px 0px;
     border: 1px solid #B1B7D6;
@@ -385,6 +385,7 @@ display: none;
   
 }
 .css-13cymwt-control{
-  min-height: -webkit-fill-available !important;
+  min-height: 32px !important;
+  max-height: 33px !important;
 }
 }
