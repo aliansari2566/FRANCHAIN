@@ -1,15 +1,5 @@
-import React, { useState, useEffect } from "react";
-import {
-  Form,
-  Input,
-  Select,
-  Button,
-  Upload,
-  message,
-  Row,
-  Col,
-  DatePicker,
-} from "antd";
+import React  from "react";
+
 
 
 const Signup = () => {
