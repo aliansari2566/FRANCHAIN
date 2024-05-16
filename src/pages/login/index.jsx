@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import { Button, Form, Input, Col, Row, message } from "antd";
 import { useNavigate } from "react-router-dom";
 import { DynamicHeader } from "../../components/DynamicHeader";
@@ -8,7 +8,7 @@ import Image from "../../assets/svg/screenImage.svg";
 const Login = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
-
+  const [isButtonDisabled, setButtonDisabled] = useState(true); 
   const onFinish = async (values) => {
     try {
       await form.validateFields();
@@ -19,7 +19,12 @@ const Login = () => {
       message.error("An error occurred while processing your request.");
     }
   };
-
+  const handleValuesChange = (changedValues, allValues) => {
+    // Check if any field is empty
+    const isEmptyField = Object.values(allValues).some((value) => value === undefined || value === '');
+    // Disable or enable button based on the presence of empty fields
+    setButtonDisabled(isEmptyField);
+  };
   return (
     <>
       <div className="Login">
@@ -101,13 +106,11 @@ const Login = () => {
                       message: "Password must be at least 12 characters"
                     }]}
                   >
-                    <Input.Password className="LoginInput" placeholder="Password" />
+                    <Input  type="password"className="LoginInput" placeholder="Password" />
+                 
                   </Form.Item>
-                  <Form.Item>
-                    <a className="login-form-forgot" href="/">
-                      Forgot password
-                    </a>
-                  </Form.Item>
+                
+                
                   <Form.Item>
                     <Button type="primary" htmlType="submit" className="login-form-button">
                       Log in
