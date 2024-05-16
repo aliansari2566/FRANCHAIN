@@ -170,7 +170,7 @@ header, footer {
   background-color: #7D97FF !important;
   font-size: 18px;
   font-weight: 700;
-  color: #282828 !important;
+  
   line-height: 23.44px;
   outline: none; /* Ensure no outline on focus */
   -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
