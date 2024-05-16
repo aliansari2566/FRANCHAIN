@@ -301,7 +301,19 @@ footer {
   /* Internet Explorer */
   appearance: none;
 }
-
+.css-19bb58m{
+  display: none !important;
+  visibility: hidden !important;
+  outline: none !important;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none !important;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none !important;
+  /* Firefox */
+  -ms-appearance: none !important;
+  /* Internet Explorer */
+  appearance: none !important;
+}
 .css-qbdosj-Input {
   display: none !important;
   visibility: hidden !important;
