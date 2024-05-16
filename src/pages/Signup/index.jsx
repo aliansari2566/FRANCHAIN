@@ -115,10 +115,12 @@ const Signup = () => {
                   <Form.Item
                     label="Business name and HQ location"
                     name="business"
+                    className="selectItem"
                     rules={[{ required: true, message: "Please Enter your Business name" }]}
                   >
                     <Input className="SignupInput" />
                     <Select
+                    className="countrySelect"
                     options={countryOptions}
                     
                     components={{ SingleValue: customSingleValue, Option: customOption }}

@@ -242,6 +242,15 @@ stroke-width: 0px !important;
 .css-qbdosj-Input{
   display: none !important;
 }
+ .selectItem  .ant-form-item-control .ant-form-item-control-input-content{
+  position: relative !important;
+ }
+ .selectItem  .ant-form-item-control {
+  position: relative !important;
+ }
+ .selectItem  .ant-form-item-control .ant-form-item-control-input-content{
+  position: relative !important;
+ }
 /*############    Select ##############*/
 
 .dynamic-button{
