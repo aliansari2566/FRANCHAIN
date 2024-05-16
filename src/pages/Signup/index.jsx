@@ -103,8 +103,7 @@ const Signup = () => {
                     label="Password"
                     name="password"
                     rules={[{ required: true, message: "Please input your Password!" }, {
-                      len: 12,
-                      message: "Password must be at least 12 characters"
+                      min: 12, message: "Password must be at least 12 characters"
                     }]}
                   >
                     <Input  type="password"className="SignupInput" placeholder="Password" />
