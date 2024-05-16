@@ -8,7 +8,8 @@
   font-family: 'DM Sans', sans-serif !important;
 }
 
-body, html {
+body,
+html {
   font-family: 'DM Sans', sans-serif !important;
   min-height: 100vh;
   margin: 0;
@@ -18,24 +19,28 @@ body, html {
 label.ant-form-item-required::before {
   content: none !important;
 }
-.ant-form-item-label{
+
+.ant-form-item-label {
   font-size: 16px;
   font-weight: 400;
   line-height: 20.83px;
   text-align: left;
 }
-#root{
-min-height: 100vh;
+
+#root {
+  min-height: 100vh;
 }
+
 .Signup {
   display: flex;
   justify-content: center;
-  
+
   min-height: 100vh;
   position: relative;
 }
 
-.Signup::before, .Signup::after {
+.Signup::before,
+.Signup::after {
   content: "";
   position: absolute;
   top: 0;
@@ -63,13 +68,15 @@ min-height: 100vh;
 
   border-radius: 8px;
 }
+
 .container-row {
- 
+
   height: 100%;
- 
+
 }
 
-header, footer {
+header,
+footer {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -86,6 +93,7 @@ header, footer {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .SignupLeftcontent {
   display: flex;
   flex-direction: column;
@@ -94,17 +102,20 @@ header, footer {
   justify-content: center;
   height: 100%;
   max-width: 553px;
-    width: 100%;
-    margin-top: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 }
-.SignupLeftcontent .ImageContainer{
+
+.SignupLeftcontent .ImageContainer {
   width: 427.62px;
   height: 327px;
 }
-.SignupLeftcontent .ImageContainer .ScreenImage{
+
+.SignupLeftcontent .ImageContainer .ScreenImage {
   width: 100%;
   height: 100%;
 }
+
 .SignupLeftcontent h4 {
   font-size: 40px;
   font-weight: 500;
@@ -114,28 +125,33 @@ header, footer {
   margin-bottom: 1rem;
 
 }
-.SignupLeftcontent p{
+
+.SignupLeftcontent p {
   font-size: 22px;
   font-weight: 400;
   line-height: 28.64px;
   text-align: center;
 }
 
-.SignupLeftcontent, .FormOuter {
+.SignupLeftcontent,
+.FormOuter {
 
-  margin: 0 auto; /* Center the content */
+  margin: 0 auto;
+  /* Center the content */
 }
 
 .FormOuter {
   max-width: 530px;
   width: 100%;
 }
-.FormOuter h3{
+
+.FormOuter h3 {
   font-size: 35px;
   font-weight: 500;
   line-height: 45.57px;
 }
-.FormOuter .formPara{
+
+.FormOuter .formPara {
   font-size: 20px;
   font-weight: 400;
   line-height: 26.04px;
@@ -147,12 +163,12 @@ header, footer {
 }
 
 .SignupInput {
-   width: 100%;
-    height: 56px;
-  
-    border-radius: 10px;
-    border: 1px 0px 0px 0px;
-    border: 1px solid #B1B7D6;
+  width: 100%;
+  height: 56px;
+
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid #B1B7D6;
 }
 
 .Signup-form-forgot {
@@ -170,178 +186,242 @@ header, footer {
   background-color: #7D97FF !important;
   font-size: 18px;
   font-weight: 700;
-  
+
   line-height: 23.44px;
-  outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  outline: none;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 }
+
 .Signup-form-button:hover {
 
   background-color: #7D97FF !important;
 }
-.DynamicHeader{
-    display: flex;
-    justify-content: space-between;
+
+.DynamicHeader {
+  display: flex;
+  justify-content: space-between;
 }
-.HeaderLogoImage{
+
+.HeaderLogoImage {
   cursor: pointer;
-  
+
 }
+
 /*############    Select ##############*/
 .css-b62m3t-container {
   position: absolute !important;
   right: 0;
   top: 0;
   height: inherit !important;
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
   /* height: 56px !important; */
 }
-.css-13cymwt-control{
+
+.css-13cymwt-control {
   background-color: transparent !important;
   border-radius: 0px !important;
   min-height: 56px !important;
   border: none !important;
   border-left: 1px solid #B1B7D6 !important;
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 }
-.css-1fdsijx-ValueContainer{
+
+.css-1fdsijx-ValueContainer {
   padding-right: 3px !important;
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 }
-.css-1fdsijx-ValueContainer  div img{
+
+.css-1fdsijx-ValueContainer div img {
   width: 20px !important;
   height: 20px !important;
   margin-right: 8px !important;
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 
 }
-.css-1xc3v61-indicatorContainer{
+
+.css-1xc3v61-indicatorContainer {
   color: black !important;
-  outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  outline: none;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 }
 
-.css-tj5bde-Svg{
+.css-tj5bde-Svg {
 
-stroke-width: 0px !important;
+  stroke-width: 0px !important;
 
 }
-.css-1u9des2-indicatorSeparator{
+
+.css-1u9des2-indicatorSeparator {
   display: none !important;
-  outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+  outline: none;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 }
-.css-qbdosj-Input{
+
+.css-qbdosj-Input {
   display: none !important;
   visibility: hidden !important;
-  outline: none !important; /* Ensure no outline on focus */
-  -webkit-appearance: none !important; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none !important; /* Firefox */
-  -ms-appearance: none !important; /* Internet Explorer */
-  appearance: none !important; 
+  outline: none !important;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none !important;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none !important;
+  /* Firefox */
+  -ms-appearance: none !important;
+  /* Internet Explorer */
+  appearance: none !important;
 }
- .selectItem  .ant-form-item-control .ant-form-item-control-input-content{
+
+.selectItem .ant-form-item-control .ant-form-item-control-input-content {
   position: relative !important;
-  outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
- }
- .selectItem  .ant-form-item-control {
+  outline: none;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
+}
+
+.selectItem .ant-form-item-control {
   position: relative !important;
-  outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
- }
- 
+  outline: none;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
+}
+
 /*############    Select ##############*/
 
-.dynamic-button{
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: transparent;
-    color: #282828 !important; 
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20.83px;
-    outline: none; /* Ensure no outline on focus */
-  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
-  -moz-appearance: none; /* Firefox */
-  -ms-appearance: none; /* Internet Explorer */
-  appearance: none; 
+.dynamic-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #282828 !important;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  outline: none;
+  /* Ensure no outline on focus */
+  -webkit-appearance: none;
+  /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none;
+  /* Firefox */
+  -ms-appearance: none;
+  /* Internet Explorer */
+  appearance: none;
 }
-.DynamicHeader .dynamic-button .anticon{
+
+.DynamicHeader .dynamic-button .anticon {
   margin-left: 0.7rem;
 }
-.ant-btn-primary:disabled{
+
+.ant-btn-primary:disabled {
   border-color: none;
   color: white;
   background: #CED6F7 !important;
 }
-.agreementPara{
+
+.agreementPara {
   font-size: 14px;
   font-weight: 400;
   line-height: 18.23px;
   text-align: left;
   color: #282828;
-  
+
 }
-.agreementPara a{
-text-decoration: underline;
-color: #282828 !important;
--webkit-tap-highlight-color: transparent;
+
+.agreementPara a {
+  text-decoration: underline;
+  color: #282828 !important;
+  -webkit-tap-highlight-color: transparent;
 }
-.btn-item{
-padding-top: 30px;
+
+.btn-item {
+  padding-top: 30px;
 }
+
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .Signup::before, .Signup::after {
+
+  .Signup::before,
+  .Signup::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: -1;
-}
-.container-row {
+  }
 
-  padding-top: 9.661rem;
+  .container-row {
+
+    padding-top: 9.661rem;
+  }
+
+  .FormOuter {
+    max-width: 624px;
+    width: 100%;
+  }
+
+  .SignupLeft {
+    display: none;
+  }
 }
-.FormOuter {
-  max-width: 624px;
-  width: 100%;
-}
-.SignupLeft{
-display: none;
-}
-}
+
 @media (max-width: 768px) {
   .content-container {
     padding: 15px;
@@ -352,69 +432,83 @@ display: none;
   }
 
   .SignupInput {
-    
+
     font-size: 1.1rem;
   }
-  .ant-form-item .ant-form-item-label >label {
-      font-size: 15px; /* Increased from 12px */
-      font-weight: 400;
-      line-height: 15.62px;
+
+  .ant-form-item .ant-form-item-label>label {
+    font-size: 15px;
+    /* Increased from 12px */
+    font-weight: 400;
+    line-height: 15.62px;
   }
+
   .SignupInput {
-  
+
     height: 40.632px;
     border-radius: 6px;
     border: 1px 0px 0px 0px;
     border: 1px solid #B1B7D6;
-}
+  }
 
   .FormOuter {
     max-width: 353px;
     width: 100%;
-}
-.FormOuter h3 {
+  }
 
-  font-size: 26px; /* Increased from 22px */
-  font-weight: 500;
-  line-height: 28.64px;
- 
-}
-.FormOuter .formPara {
-  padding-top: 6px;
-  font-size: 20px; /* Increased from 16px */
-  font-weight: 400;
-  line-height: 20.83px;
-  padding-bottom: 24px;
-}
-.Signup-form-button {
-  width: 91.37px;
-  height: 34.14px;
- 
-  padding: 6.07px 24.18px 9.07px 24.18px;
+  .FormOuter h3 {
 
-  font-size: 15.6px; /* Increased from 12px */
+    font-size: 26px;
+    /* Increased from 22px */
+    font-weight: 500;
+    line-height: 28.64px;
+
+  }
+
+  .FormOuter .formPara {
+    padding-top: 6px;
+    font-size: 20px;
+    /* Increased from 16px */
+    font-weight: 400;
+    line-height: 20.83px;
+    padding-bottom: 24px;
+  }
+
+  .Signup-form-button {
+    width: 91.37px;
+    height: 34.14px;
+
+    padding: 6.07px 24.18px 9.07px 24.18px;
+
+    font-size: 15.6px;
+    /* Increased from 12px */
 
 
-}
-.HeaderLogoImage{
-  cursor: pointer;
-  width: 30px;
-}
-.container-row {
+  }
 
-  padding-top: 40px;
-}
-.agreementPara{
-  font-size: 13px; /* Adjusted from 10px */
-  font-weight: 400;
-  line-height: 13.02px;
-  text-align: left;
-  color: #282828;
-  
-}
-.css-13cymwt-control{
- 
-  min-height: 39px !important;
-  max-height: 33px !important;
-}
+  .HeaderLogoImage {
+    cursor: pointer;
+    width: 30px;
+  }
+
+  .container-row {
+
+    padding-top: 40px;
+  }
+
+  .agreementPara {
+    font-size: 13px;
+    /* Adjusted from 10px */
+    font-weight: 400;
+    line-height: 13.02px;
+    text-align: left;
+    color: #282828;
+
+  }
+
+  .css-13cymwt-control {
+
+    min-height: 39px !important;
+    max-height: 33px !important;
+  }
 }
