@@ -194,7 +194,11 @@ header, footer {
   position: absolute !important;
   right: 0;
   top: 0;
-  height: inherit;
+  height: inherit !important;
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
   /* height: 56px !important; */
 }
 .css-13cymwt-control{
@@ -202,16 +206,27 @@ header, footer {
   border-radius: 0px !important;
   min-height: 56px !important;
   border: none !important;
-  border-left: 1px solid #B1B7D6!important;
-
+  border-left: 1px solid #B1B7D6 !important;
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
 .css-1fdsijx-ValueContainer{
-  padding-right: 3px!important;
+  padding-right: 3px !important;
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 }
 .css-1fdsijx-ValueContainer  div img{
   width: 20px !important;
   height: 20px !important;
   margin-right: 8px !important;
+  -webkit-appearance: none; /* Chrome, Safari, and newer versions of iOS */
+  -moz-appearance: none; /* Firefox */
+  -ms-appearance: none; /* Internet Explorer */
+  appearance: none; 
 
 }
 .css-1xc3v61-indicatorContainer{
