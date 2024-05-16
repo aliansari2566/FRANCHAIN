@@ -1,5 +1,5 @@
 import React from 'react';
-import Errorpng from "../../assets/png/pagenotfound.png";
+// import Errorpng from "../../assets/png/pagenotfound.png";
 const PageNotFound = (props) => {
     return (
       <section>
@@ -8,7 +8,7 @@ const PageNotFound = (props) => {
             <div class="m-auto text-center">
               <div>
               <img
-                  src={Errorpng}
+                  src={null}
                   alt={"logo"}
                   className="Errorpng"
                   style={{ height: "auto" }}

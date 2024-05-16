@@ -1,7 +1,7 @@
-import './App.css';
+import './assets/style.css';
 
-import {MyRoute} from './routing/PublicRoutes';
-// import './'
+import {MyRoute} from './rounting/PublicRoutes';
+
 
 function App() {
   return (
