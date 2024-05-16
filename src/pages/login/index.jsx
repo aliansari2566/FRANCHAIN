@@ -29,7 +29,7 @@ const Login = () => {
     <>
       <div className="Login">
         <div className="content-container">
-          <DynamicHeader buttonText="Create Account" />
+          <DynamicHeader buttonText="Log in" />
           <Row justify="center" className="container-row">
             <Col className="loginLeft" xs={24} sm={24} md={12} lg={12} xl={12}>
               <div className="loginLeftcontent">
@@ -60,6 +60,7 @@ const Login = () => {
                   className="login-form"
                   initialValues={{ remember: true }}
                   onFinish={onFinish}
+                  onValuesChange={handleValuesChange}
                 >
                   <Form.Item
                     label="First name"
@@ -112,7 +113,7 @@ const Login = () => {
                 
                 
                   <Form.Item>
-                    <Button type="primary" htmlType="submit" className="login-form-button">
+                    <Button type="primary" htmlType="submit" className="login-form-button"     disabled={isButtonDisabled}>
                       Log in
                     </Button>
                   </Form.Item>

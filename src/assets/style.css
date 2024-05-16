@@ -162,9 +162,9 @@ header, footer {
 }
 .loginHeader{
     display: flex;
-    
     justify-content: space-between;
 }
+
 
 
 .dynamic-button{
@@ -172,6 +172,9 @@ header, footer {
     margin: 0;
     border: none;
     background-color: transparent;
+}
+.loginHeader .dynamic-button .anticon{
+  margin-left: 0.7rem;
 }
 
 /* Responsive Design */
